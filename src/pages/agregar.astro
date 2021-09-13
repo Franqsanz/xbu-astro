@@ -1,0 +1,15 @@
+---
+import AddBooks from '../components/addBooks.svelte';
+import MainHead from '../components/MainHead.astro';
+import Info from '../components/Info.astro';
+import Layouts from '../layouts/MainLayouts.astro';
+---
+
+<MainHead title="Agregar" />
+<Layouts>
+  <Info
+    title="Agrega un nuevo libro"
+    text="Compartelo con la comunidad."
+  />
+  <AddBooks client:load />
+</Layouts>

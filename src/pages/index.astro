@@ -1,0 +1,22 @@
+---
+// Component Imports
+// import Tour from '../components/Tour.astro';
+import Layouts from '../layouts/MainLayouts.astro';
+import Info from '../components/Info.astro';
+import Books from '../components/books.svelte';
+// You can import components from any supported Framework here!
+
+
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+<Layouts>
+	<Info title="Libros Aleatorios" text="¡Explora!" />
+	<Books client:visible />
+	<!-- <Tour /> -->
+</Layouts>

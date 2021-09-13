@@ -1,0 +1,19 @@
+---
+const menu = [
+  { url: '/', text: 'Home' },
+  { url: '/agregar', text: 'Agregar Libro'},
+]
+---
+
+<!-- flex justify-between items-center -->
+
+<nav class="text-lg bg-white">
+  <!-- <span class="text-4xl mx-4 uppercase">L A</span> -->
+  <ul class="flex justify-end mx-4">
+    {menu.map((item) => (
+      <li class="rounded border-2 border-black font-medium m-2 hover:bg-black hover:text-white cursor-pointer transition duration-400">
+        <a href={item.url} class="block p-1">{item.text}</a>
+      </li>
+    ))}
+  </ul>
+</nav>

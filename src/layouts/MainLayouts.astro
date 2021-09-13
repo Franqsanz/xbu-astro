@@ -1,0 +1,16 @@
+---
+  import Header from '../components/Header.astro';
+  import MainHead from '../components/MainHead.astro';
+---
+
+<html lang="en">
+  <head>
+    <MainHead title="My Astro Site" />
+  </head>
+  <body class="font-sans bg-gray-100">
+    <main>
+      <Header />
+      <slot />
+    </main>
+  </body>
+</html>
