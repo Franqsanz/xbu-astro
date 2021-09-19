@@ -12,7 +12,7 @@
           class="m-2 rounded-md p-3 border-2 border-gray-400 focus:border-green-500 focus:outline-none focus:right-1 focus:ring-green-500"
           type="file"
         /> -->
-        <label for="" class="pt-3 mx-3 text-xl">Titulo del libro</label>
+        <label for="" class="pt-3 mx-3 text-xl">Titulo</label>
         <input
           class="m-2 rounded-md p-3 border-2 border-gray-400 focus:border-green-500 focus:outline-none focus:right-1 focus:ring-green-500"
           type="text"
@@ -25,16 +25,20 @@
           rows="5"
           placeholder="Descripción"
         />
-        <label for="" class="pt-3 mx-3 text-xl">Género literario</label>
+        <label for="" class="pt-3 mx-3 text-xl">Categoria</label>
         <select
-          class="m-2 rounded-md p-3 border-2 border-gray-400 focus:border-green-500 focus:outline-none focus:right-1 focus:ring-green-500"
+          class="m-2 rounded-md p-3 border-2 border-gray-400 bg-white focus:border-green-500 focus:outline-none focus:right-1 focus:ring-green-500"
         >
           <option value="">Terror</option>
           <option value="">Romance</option>
           <option value="">Ciencia Ficcion</option>
           <option value="">Triller</option>
-          <option value="">Fantastica</option>
+          <option value="">Fantasia</option>
           <option value="">Policiales</option>
+          <option value="">Tecnologia</option>
+          <option value="">Ciencia</option>
+          <option value="">Cocina</option>
+          <option value="">Arte</option>
         </select>
       </div>
       <div class="flex flex-col p-2 mb-4">
@@ -57,7 +61,7 @@
         />
         <label for="" class="pt-3 mx-3 text-xl">Fecha de publicación</label>
         <input
-          class="m-2 rounded-md p-3 border-2 border-gray-400 focus:border-green-500 focus:outline-none focus:right-1 focus:ring-green-500"
+          class="m-2 rounded-md p-3 border-2 border-gray-400 bg-white focus:border-green-500 focus:outline-none focus:right-1 focus:ring-green-500"
           type="date"
         />
         <label for="" class="pt-3 mx-3 text-xl"
