@@ -1,115 +1,83 @@
 <script>
-  const books = [
-    {
-      img: '/assets/fondo3.jpg',
-      title: 'Cross-Browser Compatibility',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni error repudiandae quaerat tenetur. Magnam provident vel error officia laborum necessitatibus deserunt, blanditiis quis sint, voluptatibusquo? Nihil soluta facilis consequuntur!',
-      autor: 'Franco',
-      categoria: 'Terror',
-      calificacion: 3,
-      cantidad_de_paginas: 275,
-      fecha_de_publicacion: '15/04/2015',
-    },
-    {
-      img: '/assets/fondo3.jpg',
-      title: 'Supported Styling Options',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni error repudiandae quaerat tenetur. Magnam provident vel error officia laborum necessitatibus deserunt, blanditiis quis sint, voluptatibusquo? Nihil soluta facilis consequuntur!',
-      autor: 'Franco',
-      categoria: 'Terror',
-      calificacion: 3,
-      cantidad_de_paginas: 275,
-      fecha_de_publicacion: '15/04/2015',
-    },
-    {
-      img: '/assets/fondo3.jpg',
-      title: 'Frameworks and Libraries',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni error repudiandae quaerat tenetur. Magnam provident vel error officia laborum necessitatibus deserunt, blanditiis quis sint, voluptatibusquo? Nihil soluta facilis consequuntur!',
-      autor: 'Franco',
-      categoria: 'Terror',
-      calificacion: 3,
-      cantidad_de_paginas: 275,
-      fecha_de_publicacion: '15/04/2015',
-    },
-    {
-      img: '/assets/fondo3.jpg',
-      title: 'Importing from npm',
-      description:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni error repudiandae quaerat tenetur. Magnam provident vel error officia laborum necessitatibus deserunt, blanditiis quis sint, voluptatibusquo? Nihil soluta facilis consequuntur!',
-      autor: 'Franco',
-      categoria: 'Ciencia Ficción',
-      calificacion: 3,
-      cantidad_de_paginas: 275,
-      fecha_de_publicacion: '15/04/2015',
-    },
-  ];
+  import books from '../data/data';
 </script>
 
 <section class="flex my-5 justify-center flex-col items-center">
   <!-- <h2 class="w-full pl-8 py-9 text-3xl font-semibold text-left">
 		Lista De Libros
 	</h2> -->
-  <div class="">
+  <div>
     <div class="flex flex-wrap justify-center pb-4 text-base md:text-xl">
-      <!-- <a href="/terror">
+      <a href="/categories/terror">
         <span
           class="p-1 rounded-lg border border-lime-400 text-lime-700 bg-lime-50 m-0.5 md:mx-2"
         >
           Terror
         </span>
-      </a> -->
-      <span
-        class="p-1 rounded-lg border border-lime-400 text-lime-700 bg-lime-50 m-0.5 md:mx-2"
-      >
-        Terror
-      </span>
-      <span
-        class="p-1 rounded-lg border border-lime-400 text-lime-700 bg-lime-50 m-0.5 md:mx-2"
-      >
-        Romance
-      </span>
-      <span
-        class="p-1 rounded-lg border border-lime-400 text-lime-700 bg-lime-50 m-0.5 md:mx-2"
-      >
-        Triller
-      </span>
-      <span
-        class="p-1 rounded-lg border border-lime-400 text-lime-700 bg-lime-50 m-0.5 md:mx-2"
-      >
-        Ciencia Ficción
-      </span>
-      <span
-        class="p-1 rounded-lg border border-lime-400 text-lime-700 bg-lime-50 m-0.5 md:mx-2"
-      >
-        Fantasia
-      </span>
-      <span
-        class="p-1 rounded-lg border border-lime-400 text-lime-700 bg-lime-50 m-0.5 md:mx-2"
-      >
-        Policiales
-      </span>
-      <span
-        class="p-1 rounded-lg border border-lime-400 text-lime-700 bg-lime-50 m-0.5 md:mx-2"
-      >
-        Tecnologia
-      </span>
-      <span
-        class="p-1 rounded-lg border border-lime-400 text-lime-700 bg-lime-50 m-0.5 md:mx-2"
-      >
-        Ciencia
-      </span>
-      <span
-        class="p-1 rounded-lg border border-lime-400 text-lime-700 bg-lime-50 m-0.5 md:mx-2"
-      >
-        Cocina
-      </span>
-      <span
-        class="p-1 rounded-lg border border-lime-400 text-lime-700 bg-lime-50 m-0.5 md:mx-2"
-      >
-        Arte
-      </span>
+      </a>
+      <a href="/categories/romance">
+        <span
+          class="p-1 rounded-lg border border-lime-400 text-lime-700 bg-lime-50 m-0.5 md:mx-2"
+        >
+          Romance
+        </span>
+      </a>
+      <a href="/categories/triller">
+        <span
+          class="p-1 rounded-lg border border-lime-400 text-lime-700 bg-lime-50 m-0.5 md:mx-2"
+        >
+          Triller
+        </span>
+      </a>
+      <a href="/categories/ciencia-ficcion">
+        <span
+          class="p-1 rounded-lg border border-lime-400 text-lime-700 bg-lime-50 m-0.5 md:mx-2"
+        >
+          Ciencia Ficción
+        </span>
+      </a>
+      <a href="/categories/fantasia">
+        <span
+          class="p-1 rounded-lg border border-lime-400 text-lime-700 bg-lime-50 m-0.5 md:mx-2"
+        >
+          Fantasia
+        </span>
+      </a>
+      <a href="/categories/policiales">
+        <span
+          class="p-1 rounded-lg border border-lime-400 text-lime-700 bg-lime-50 m-0.5 md:mx-2"
+        >
+          Policiales
+        </span>
+      </a>
+      <a href="/categories/tecnologia">
+        <span
+          class="p-1 rounded-lg border border-lime-400 text-lime-700 bg-lime-50 m-0.5 md:mx-2"
+        >
+          Tecnologia
+        </span>
+      </a>
+      <a href="/categories/ciencias">
+        <span
+          class="p-1 rounded-lg border border-lime-400 text-lime-700 bg-lime-50 m-0.5 md:mx-2"
+        >
+          Ciencias
+        </span>
+      </a>
+      <a href="/categories/cocina">
+        <span
+          class="p-1 rounded-lg border border-lime-400 text-lime-700 bg-lime-50 m-0.5 md:mx-2"
+        >
+          Cocina
+        </span>
+      </a>
+      <a href="/categories/arte">
+        <span
+          class="p-1 rounded-lg border border-lime-400 text-lime-700 bg-lime-50 m-0.5 md:mx-2"
+        >
+          Arte
+        </span>
+      </a>
     </div>
   </div>
   <section class="container flex flex-wrap justify-center items-center">

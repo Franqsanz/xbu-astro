@@ -1,0 +1,24 @@
+---
+import Layouts from '../../layouts/MainLayouts.astro';
+import books from '../../data/data.js';
+import MainHead from '../../components/MainHead.astro';
+
+export function getStaticPaths() {
+  // const slugify = url => (url.toLowerCase().replace(/[^a-z0-9 -]/g, '').replace(/\s+/g, '-'));
+
+  return books.map((c) => {
+    return {
+      params: {category: c.categoria},
+      props: { c }
+    }
+  });
+}
+
+const { category } = Astro.request.params;
+const { c } = Astro.props;
+---
+
+<MainHead title={category} />
+<Layouts>
+  {console.log(c.categoria)}
+</Layouts>
