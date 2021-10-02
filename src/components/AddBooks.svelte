@@ -5,13 +5,6 @@
   <form class="font-sans w-auto flex flex-col m-0 bg-white p-3 rounded-lg">
     <div class="flex flex-col md:flex-row">
       <div class="w-80 flex flex-col p-2 mb-4">
-        <!-- <label for="" class="pt-3 mx-3 text-xl"
-          >Subir una imagen del libro</label
-        >
-        <input
-          class="m-2 rounded-md p-3 border-2 border-gray-400 focus:border-green-500 focus:outline-none focus:right-1 focus:ring-green-500"
-          type="file"
-        /> -->
         <label for="" class="pt-3 mx-3 text-xl">Titulo</label>
         <input
           class="m-2 rounded-md p-3 border-2 border-gray-400 focus:border-green-500 focus:outline-none focus:right-1 focus:ring-green-500"
@@ -31,12 +24,11 @@
         >
           <option value="">Terror</option>
           <option value="">Romance</option>
-          <option value="">Ciencia Ficcion</option>
           <option value="">Triller</option>
           <option value="">Fantasia</option>
           <option value="">Policiales</option>
           <option value="">Tecnologia</option>
-          <option value="">Ciencia</option>
+          <option value="">Ciencias</option>
           <option value="">Cocina</option>
           <option value="">Arte</option>
         </select>
@@ -111,7 +103,7 @@
         class="w-28 my-2 rounded-md p-3 bg-lime-400 uppercase font-semibold hover:bg-lime-500"
         type="submit"
       >
-        Agregar
+        Guardar
       </button>
     </div>
   </form>
