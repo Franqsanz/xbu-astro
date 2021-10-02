@@ -1,7 +1,7 @@
 ---
 const menu = [
   { url: '/', text: 'Inicio' },
-  { url: '/agregar', text: 'Nuevo Libro'},
+  { url: '/add-books', text: 'Nuevo Libro'}
 ]
 ---
 
@@ -9,7 +9,7 @@ const menu = [
 
 <nav class="text-lg bg-white p-3 shadow-sm z-10">
   <!-- <span class="text-4xl mx-4 uppercase">PB</span> -->
-  <ul class="flex justify-end mx-4">
+  <ul class="flex justify-end">
     {menu.map((item) => (
       <li class="rounded-md border-2 text-lime-700 border-lime-400 font-medium m-2 hover:bg-lime-400 hover:text-black cursor-pointer transition duration-400">
         <a href={item.url} class="block p-2">{item.text}</a>

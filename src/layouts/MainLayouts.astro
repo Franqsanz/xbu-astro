@@ -1,16 +1,22 @@
 ---
 import Header from '../components/Header.astro';
 import MainHead from '../components/MainHead.astro';
+
+const { title } = Astro.props;
 ---
 
 <html lang="en">
   <head>
-    <MainHead title="PlorerBooks" />
+    <title>{title}</title>
+    <MainHead />
   </head>
   <body class="font-sans bg-gray-50">
     <main>
       <Header />
       <slot />
     </main>
+    <footer class="text-center bg-lime-200 p-8">
+      Construido con Astro + TailwindCSS
+    </footer>
   </body>
 </html>

@@ -1,7 +1,7 @@
 ---
-export interface Props {
+export interface props {
   title: string;
-  text: string;
+  text?: string;
 }
 
 const { title, text } = Astro.props;
@@ -11,7 +11,7 @@ const { title, text } = Astro.props;
 
 <section class="flex bg-white justify-center text-center py-28">
   <div class="max-w-2xl">
-    <h1 class="text-transparent bg-gradient-to-br bg-clip-text from-lime-200 via-lime-400 to-green-600 text-7xl mb-4 font-bold">{title}</h1>
+    <h1 class=" text-lime-600 text-7xl mb-4 font-bold">{title}</h1>
     <p class="text-black text-3xl">{text}</p>
   </div>
 </section>
