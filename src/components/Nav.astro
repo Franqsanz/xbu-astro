@@ -5,10 +5,12 @@ const menu = [
 ]
 ---
 
-<!-- flex justify-between items-center -->
-
-<nav class="text-lg bg-white p-3 shadow-sm z-10">
-  <!-- <span class="text-4xl mx-4 uppercase">PB</span> -->
+<nav class="flex justify-between items-center text-lg bg-white p-3 shadow-sm z-10">
+  <span class="text-4xl mx-4 text-transparent bg-gradient-to-br bg-clip-text from-lime-200 via-lime-400 to-green-600 font-bold">
+    <a href="/">
+      XBooks
+    </a>
+  </span>
   <ul class="flex justify-end">
     {menu.map((item) => (
       <li class="rounded-md border-2 text-lime-700 border-lime-400 font-medium m-2 hover:bg-lime-400 hover:text-black cursor-pointer transition duration-400">

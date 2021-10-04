@@ -4,22 +4,21 @@ import books from '../../data/data.js';
 import Info from '../../components/Info.astro';
 
 export function getStaticPaths() {
-  // const slugify = url => (url.toLowerCase().replace(/[^a-z0-9 -]/g, '').replace(/\s+/g, '-'));
+  // const slugify = url => (url.replace(/[^a-z0-9 -]/g, '').replace(/\s+/g, '-'));
 
   return books.map((c) => {
     return {
-      params: {category: c.url_category},
+      params: { category: c.url_category },
       props: { c }
     }
   });
 }
 
-const { category } = Astro.request.params;
+// const { category } = Astro.request.params;
 const { c } = Astro.props;
 ---
 
-<Layouts title={category}>
-  <!-- {console.log(c.categoria)} -->
+<Layouts title={c.category}>
   <Info title={c.category} text="" />
 
   <section class="container py-4 flex flex-wrap justify-center items-center">

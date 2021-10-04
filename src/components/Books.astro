@@ -13,18 +13,16 @@ const tags = [
 ---
 
 <section class="flex my-5 justify-center flex-col items-center">
-  <div>
-    <div class="flex flex-wrap justify-center pb-4 text-base md:text-xl">
-      {tags.map((item) => (
-        <a class="block mt-3" href={`/categories/${item.url}`}>
-          <span
-            class="p-1 rounded-lg border border-lime-400 text-lime-700 bg-lime-50 m-0.5 md:mx-2"
-          >
-            {item.category}
-          </span>
-        </a>
-      ))}
-    </div>
+  <div class="flex flex-wrap justify-center text-base md:text-xl">
+    {tags.map((item) => (
+      <a class="block my-3" href={`/categories/${item.url}`}>
+        <span
+          class="p-2 rounded-lg border border-lime-400 text-lime-700 bg-lime-50 m-0.5 md:mx-2"
+        >
+          {item.category}
+        </span>
+      </a>
+    ))}
   </div>
   <section class="container py-4 flex flex-wrap justify-center items-center">
     {books.map((item) => (
