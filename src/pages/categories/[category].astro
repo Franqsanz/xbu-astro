@@ -5,7 +5,11 @@ import Info from '../../components/Info.astro';
 import Card from '../../components/Cards.astro';
 
 export function getStaticPaths() {
+    // console.log(d)
   // const slugify = url => (url.replace(/[^a-z0-9 -]/g, '').replace(/\s+/g, '-'));
+    // const s = books.filter((c) => c.category === params.category)
+    // console.log(s)
+
   return books.map((item) => {
     return {
       params: { category: item.url_category },
@@ -14,7 +18,7 @@ export function getStaticPaths() {
   });
 }
 
-// const { category } = Astro.request.params;
+const { params } = Astro.request;
 const { item } = Astro.props;
 ---
 
