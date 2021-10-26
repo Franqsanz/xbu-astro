@@ -1,5 +1,5 @@
 ---
-import books from '../data/data';
+import books from '../data/data.json';
 import Card from '../components/Cards.astro';
 
 const tags = [
@@ -29,7 +29,7 @@ const tags = [
     ))}
   </div>
   <section class="container py-4 flex flex-wrap justify-center items-center">
-    {books.map((item) => (
+    {books.books.map((item) => (
       <Card
         img={item.img}
         category={item.category}

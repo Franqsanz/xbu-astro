@@ -1,18 +1,19 @@
 ---
 import Layouts from '../../layouts/MainLayouts.astro';
-import books from '../../data/data.js';
+import books from '../../data/data.json';
 import Info from '../../components/Info.astro';
 import Card from '../../components/Cards.astro';
 
 export function getStaticPaths() {
-    // console.log(d)
+  // Astro.fetchContent('../../data/data.json')
+  // .then((res) => res.json())
+  // .then((data) => console.log(data))
+  // .catch((err) => console.log(err))
   // const slugify = url => (url.replace(/[^a-z0-9 -]/g, '').replace(/\s+/g, '-'));
-    // const s = books.filter((c) => c.category === params.category)
-    // console.log(s)
 
-  return books.map((item) => {
+  return books.books.map((item) => {
     return {
-      params: { category: item.url_category },
+      params: { category: item.category.toLocaleLowerCase() },
       props: { item }
     }
   });
@@ -23,7 +24,7 @@ const { item } = Astro.props;
 ---
 
 <Layouts title={item.category}>
-  <Info title={item.category} text="" />
+  <Info title={item.category} />
   <section class="py-4 flex flex-wrap justify-center items-center">
     <Card
       img={item.img}
