@@ -13,13 +13,13 @@ export function getStaticPaths() {
 
   return books.books.map((item) => {
     return {
-      params: { category: item.category.toLocaleLowerCase() },
+      params: { category: item.category.toLowerCase() },
       props: { item }
     }
   });
 }
 
-const { params } = Astro.request;
+// const { params } = Astro.request;
 const { item } = Astro.props;
 ---
 

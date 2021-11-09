@@ -7,6 +7,9 @@ module.exports = {
     './src/**/*.{astro,js,svelte,ts}'
   ],
   theme: {
+    fontFamily: {
+      poppins: 'Poppins, sans-serif',
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -22,5 +25,8 @@ module.exports = {
       green: colors.green,
       indigo: colors.indigo,
     }
-  }
+  },
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 };

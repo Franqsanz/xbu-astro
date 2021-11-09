@@ -9,5 +9,8 @@
   "devDependencies": {
     "astro": "^0.19.0",
     "tailwindcss": "^2.2.9"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.4"
   }
 }

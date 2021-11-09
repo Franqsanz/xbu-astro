@@ -5,8 +5,8 @@ export interface Props {
   title: string,
   description: string,
   author: string,
-  rating: string,
-  pages: string,
+  rating: number,
+  pages: number,
   publication: string
 }
 
@@ -23,7 +23,7 @@ const {
 ---
 
 <figure
-  class="flex justify-center flex-col items-center m-3 shadow-lg rounded-3xl overflow-hidden bg-white">
+  class="font-poppins flex justify-center flex-col items-center m-3 shadow-lg rounded-3xl overflow-hidden bg-white">
   <picture>
     <img
       class="max-w-full w-96 h-96 object-cover md:h-auto mx-auto sm:rounded-bl-full"
