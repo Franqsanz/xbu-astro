@@ -1,1 +1,11 @@
-<h1>Explorer</h1>
+---
+import Layouts from '../layouts/MainLayouts.astro';
+import Books from '../components/Books.astro';
+import Info from '../components/Info.astro';
+
+---
+
+<Layouts title="Explorar">
+  <Info title="Explorar" />
+  <Books client:visible />
+</Layouts>
