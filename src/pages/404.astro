@@ -1,8 +1,15 @@
 ---
 import Layouts from '../layouts/MainLayouts.astro';
-import Info from '../components/Info.astro';
 ---
 
 <Layouts title="404">
-  <Info title="404" text="Page Not Found" />
+  <section class="flex bg-lime-100 h-screen justify-center text-center py-20 ">
+    <div class="max-w-2xl mt-40">
+      <h1 class="text-7xl my-4 tracking-tight font-extrabold text-lime-700 md:my-8 sm:text-6xl md:text-9xl">404</h1>
+      <p class="text-black text-lg md:text-2xl">Page Not Found</p>
+      <div class="mt-10">
+        <a href="/" class="border-2 border-lime-400 text-lime-800 hover:bg-lime-400 p-3 rounded-md text-lg font-medium md:text-xl">Volver al Inicio</a>
+      </div>
+    </div>
+  </section>
 </Layouts>
